@@ -46,7 +46,7 @@ unset LD_PRELOAD
 command="proot"
 command+=" --link2symlink"
 command+=" -0"
-command+=" -r $dir"
+command+=" -r ${dir}"
 if [ -n "\$(ls -A alpine-binds)"  ]; then
     for f in alpine-binds/* ;do
           . \$f
