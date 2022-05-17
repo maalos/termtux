@@ -43,7 +43,7 @@ unset LD_PRELOAD
 command="proot"
 command+=" --link2symlink"
 command+=" -0"
-command+=" -r $folder"
+command+=" -r $bin"
 if [ -n "\$(ls -A ubuntu-binds)"  ]; then
         for f in ubuntu-binds/* ;do
                   . \$f
