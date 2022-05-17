@@ -10,9 +10,9 @@ read choice
 
 case $choice in
 1)
-    os="ubuntu" ;;
+    os=ubuntu ;;
 2)
-    os="alpine" ;;
+    os=alpine ;;
 *)
     echo "Incorrect choice, exiting..."; exit 1 ;;
 esac

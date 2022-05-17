@@ -13,17 +13,17 @@ fi
 if [ "$exists" != 1 ]; then
     case `dpkg --print-architecture` in
 	aarch64)
-	    arch="arm64" ;;
+	    arch="aarch64" ;;
 	arm)
 	    arch="armhf" ;;
 	amd64)
-	    arch="amd64" ;;
+	    arch="x86_64" ;;
 	x86_64)
-	    arch="amd64" ;;
+	    arch="x86_64" ;;
 	i*86)
-	    arch="i386" ;;
+	    arch="x86" ;;
 	x86)
-	    arch="i386" ;;
+	    arch="x86" ;;
 	*)
 	    echo "Unknown CPU architecture, exiting..."; exit 1 ;;
 	esac
