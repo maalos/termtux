@@ -10,7 +10,7 @@ read choice
 
 case $choice in
 1)
-    "os=ubuntu" ;;
+    os="ubuntu" ;;
 2)
     os="alpine" ;;
 *)
