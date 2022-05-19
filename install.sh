@@ -5,7 +5,7 @@ pkg install wget openssl-tool proot -y
 hash -r
 
 clear
-echo -e "1. Ubuntu 22.04\n2. Alpine 3.15.4"
+echo -e "1. Ubuntu 22.04\n2. Alpine 3.15.4\n3. Void 2021-09-30"
 read choice
 
 case $choice in
@@ -13,6 +13,8 @@ case $choice in
     os=ubuntu ;;
 2)
     os=alpine ;;
+3)
+    os=void ;;
 *)
     echo "Incorrect choice, exiting..."; exit 1 ;;
 esac
