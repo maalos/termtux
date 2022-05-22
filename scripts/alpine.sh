@@ -66,7 +66,7 @@ command+=" PATH=PATH=/bin:/usr/bin:/sbin:/usr/sbin"
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 command+=" /bin/sh --login"
-exec $command
+exec ${command}
 EOM
 
 echo "Fixing shebang of $bin"
