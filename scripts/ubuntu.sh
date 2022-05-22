@@ -63,12 +63,7 @@ command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/us
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 command+=" /bin/bash --login"
-com="\$@"
-if [ -z "\(" ];then
-        exec \$command
-    else
-        \$command -c "\$com"
-fi
+exec $command
 EOM
 
 echo "Fixing shebang of $bin"
