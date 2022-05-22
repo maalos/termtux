@@ -63,7 +63,7 @@ command+=" PATH=/usr/local/sbin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/us
 command+=" TERM=\$TERM"
 command+=" LANG=C.UTF-8"
 command+=" /bin/bash --login"
-exec ${command}
+exec \$command
 EOM
 
 echo "Fixing shebang of $bin"
