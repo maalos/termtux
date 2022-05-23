@@ -1,7 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 cd ~
 
-pkg install wget openssl-tool proot -y
 hash -r
 
 clear
